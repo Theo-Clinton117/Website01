@@ -1,0 +1,304 @@
+/* Reset some default styles and add basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+}
+
+
+.bike {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+   @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #1700e6, 0 0 30px #1700e6, 0 0 40px #1700e6, 0 0 50px #1700e6, 0 0 60px #1700e6, 0 0 70px #1700e6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+/* Features div styles */
+#features {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Product cards container styles */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual product card styles */
+.product-card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Discounted offer styles */
+#discount {
+    background-color: #ffd700;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Coming soon div styles */
+/* Styling for the Coming Soon section */
+#coming-soon {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#coming-soon h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#coming-soon p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#coming-soon ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#coming-soon ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#coming-soon a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#coming-soon a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER  */
+
+
+/* Basic styling for the footer */
+footer {
+    margin-top: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the footer text */
+.footer-text {
+    margin-bottom: 10px;
+}
+
+/* Style for the social links */
+.social-links {
+    margin-top: 10px;
+}
+
+/* Style for the social link buttons */
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .social-links {
+        margin-top: 20px;
+    }
+    .social-links a {
+        font-size: 16px;
+    }
+}
+
+
+/* FOOTER  */
+
+
+/* Basic styling for the footer */
+footer {
+    margin-top: 100px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the footer text */
+.footer-text {
+    margin-bottom: 10px;
+}
+/* Style for the footer navigation links */
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    color: #fff;
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style for the social links */
+.social-links {
+    margin-top: 10px;
+}
+
+/* Style for the social link buttons */
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .social-links {
+        margin-top: 20px;
+    }
+    .social-links a {
+        font-size: 16px;
+    }
+}
